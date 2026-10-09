@@ -1,0 +1,111 @@
+case_id,category,clear_preference,condition,conflict_coverage,dharma_citations,dharma_dropped_claims,difficulty,dimension_coverage,explanation_completeness,has_uncertainty,n_actions,n_stakeholders,score_stability,stability_label,stakeholder_coverage,status,top_action_kind,top_action_label,weight_stability
+hc-1,healthcare,False,dharmanet_full,0.667,50,0,medium,1.0,1.0,True,7,4,0.418,Highly Sensitive,0.75,evaluated,escalate_internal,Raise with the senior clinician / ethics committee,0.99
+hc-1,healthcare,False,dharmanet_no_dharma,0.667,0,0,medium,1.0,1.0,True,7,4,0.475,Highly Sensitive,0.75,evaluated,escalate_internal,Raise with the senior clinician / ethics committee,0.974
+hc-1,healthcare,,plain_llm,,,,medium,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+hc-1,healthcare,,single_framework_llm,,,,medium,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+hc-1,healthcare,,multi_framework_llm,,,,medium,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+hc-2,healthcare,False,dharmanet_full,1.0,59,0,highly_conflicting,1.0,1.0,True,7,3,0.4,Highly Sensitive,1.0,evaluated,escalate_internal,Raise with the senior clinician / ethics committee,0.979
+hc-2,healthcare,False,dharmanet_no_dharma,1.0,0,0,highly_conflicting,1.0,1.0,True,7,3,0.462,Highly Sensitive,1.0,evaluated,escalate_internal,Raise with the senior clinician / ethics committee,0.974
+hc-2,healthcare,,plain_llm,,,,highly_conflicting,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+hc-2,healthcare,,single_framework_llm,,,,highly_conflicting,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+hc-2,healthcare,,multi_framework_llm,,,,highly_conflicting,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+wp-1,workplace,False,dharmanet_full,1.0,55,0,hard,1.0,1.0,True,7,4,0.481,Highly Sensitive,1.0,evaluated,escalate_internal,Escalate internally with a deadline,1.0
+wp-1,workplace,False,dharmanet_no_dharma,1.0,0,0,hard,1.0,1.0,True,7,4,0.556,Moderately Sensitive,1.0,evaluated,escalate_internal,Escalate internally with a deadline,1.0
+wp-1,workplace,,plain_llm,,,,hard,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+wp-1,workplace,,single_framework_llm,,,,hard,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+wp-1,workplace,,multi_framework_llm,,,,hard,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+wp-2,workplace,False,dharmanet_full,0.5,61,0,easy,1.0,1.0,True,7,4,0.621,Moderately Sensitive,1.0,evaluated,escalate_internal,Escalate internally with a deadline,1.0
+wp-2,workplace,False,dharmanet_no_dharma,0.5,0,0,easy,1.0,1.0,True,7,4,0.682,Moderately Sensitive,1.0,evaluated,escalate_internal,Escalate internally with a deadline,1.0
+wp-2,workplace,,plain_llm,,,,easy,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+wp-2,workplace,,single_framework_llm,,,,easy,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+wp-2,workplace,,multi_framework_llm,,,,easy,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+ed-1,education,False,dharmanet_full,0.5,49,0,medium,1.0,1.0,True,7,4,0.464,Highly Sensitive,0.75,evaluated,escalate_internal,Talk to the student / person involved first,0.981
+ed-1,education,False,dharmanet_no_dharma,0.5,0,0,medium,1.0,1.0,True,7,4,0.543,Highly Sensitive,0.75,evaluated,escalate_internal,Talk to the student / person involved first,0.983
+ed-1,education,,plain_llm,,,,medium,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+ed-1,education,,single_framework_llm,,,,medium,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+ed-1,education,,multi_framework_llm,,,,medium,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+ed-2,education,False,dharmanet_full,0.333,49,0,hard,1.0,1.0,True,7,3,0.387,Highly Sensitive,0.25,evaluated,escalate_internal,Talk to the student / person involved first,0.923
+ed-2,education,False,dharmanet_no_dharma,0.333,0,0,hard,1.0,1.0,True,7,3,0.483,Highly Sensitive,0.25,evaluated,escalate_internal,Talk to the student / person involved first,0.944
+ed-2,education,,plain_llm,,,,hard,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+ed-2,education,,single_framework_llm,,,,hard,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+ed-2,education,,multi_framework_llm,,,,hard,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+ai-1,ai_ethics,False,dharmanet_full,0.333,61,0,hard,1.0,1.0,True,7,3,0.667,Moderately Sensitive,0.5,evaluated,escalate_internal,Escalate to the responsible-AI / privacy team,1.0
+ai-1,ai_ethics,False,dharmanet_no_dharma,0.333,0,0,hard,1.0,1.0,True,7,3,0.708,Moderately Sensitive,0.5,evaluated,escalate_internal,Escalate to the responsible-AI / privacy team,1.0
+ai-1,ai_ethics,,plain_llm,,,,hard,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+ai-1,ai_ethics,,single_framework_llm,,,,hard,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+ai-1,ai_ethics,,multi_framework_llm,,,,hard,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+ai-2,ai_ethics,False,dharmanet_full,0.0,47,0,medium,1.0,1.0,True,7,3,0.607,Moderately Sensitive,1.0,evaluated,escalate_internal,Raise with the senior clinician / ethics committee,1.0
+ai-2,ai_ethics,False,dharmanet_no_dharma,0.0,0,0,medium,1.0,1.0,True,7,3,0.66,Moderately Sensitive,1.0,evaluated,escalate_internal,Raise with the senior clinician / ethics committee,1.0
+ai-2,ai_ethics,,plain_llm,,,,medium,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+ai-2,ai_ethics,,single_framework_llm,,,,medium,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+ai-2,ai_ethics,,multi_framework_llm,,,,medium,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+pr-1,privacy,False,dharmanet_full,0.5,54,0,hard,1.0,1.0,True,7,3,0.423,Highly Sensitive,0.6,evaluated,escalate_internal,Raise it through proper internal channels,0.989
+pr-1,privacy,False,dharmanet_no_dharma,0.5,0,0,hard,1.0,1.0,True,7,3,0.485,Highly Sensitive,0.6,evaluated,escalate_internal,Raise it through proper internal channels,0.975
+pr-1,privacy,,plain_llm,,,,hard,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+pr-1,privacy,,single_framework_llm,,,,hard,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+pr-1,privacy,,multi_framework_llm,,,,hard,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+pr-2,privacy,False,dharmanet_full,0.0,53,0,easy,1.0,1.0,True,7,4,0.514,Highly Sensitive,0.75,evaluated,escalate_internal,Escalate internally with a deadline,0.999
+pr-2,privacy,False,dharmanet_no_dharma,0.0,0,0,easy,1.0,1.0,True,7,4,0.593,Moderately Sensitive,0.75,evaluated,escalate_internal,Escalate internally with a deadline,0.999
+pr-2,privacy,,plain_llm,,,,easy,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+pr-2,privacy,,single_framework_llm,,,,easy,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+pr-2,privacy,,multi_framework_llm,,,,easy,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+bz-1,business,False,dharmanet_full,0.0,54,0,medium,1.0,1.0,True,7,3,0.484,Highly Sensitive,0.6,evaluated,escalate_internal,Escalate internally with a deadline,0.999
+bz-1,business,False,dharmanet_no_dharma,0.0,0,0,medium,1.0,1.0,True,7,3,0.551,Moderately Sensitive,0.6,evaluated,escalate_internal,Escalate internally with a deadline,0.998
+bz-1,business,,plain_llm,,,,medium,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+bz-1,business,,single_framework_llm,,,,medium,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+bz-1,business,,multi_framework_llm,,,,medium,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+bz-2,business,False,dharmanet_full,0.5,50,0,easy,1.0,1.0,True,7,3,0.566,Moderately Sensitive,0.75,evaluated,escalate_internal,Raise it through proper internal channels,1.0
+bz-2,business,False,dharmanet_no_dharma,0.5,0,0,easy,1.0,1.0,True,7,3,0.622,Moderately Sensitive,0.75,evaluated,escalate_internal,Raise it through proper internal channels,0.997
+bz-2,business,,plain_llm,,,,easy,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+bz-2,business,,single_framework_llm,,,,easy,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+bz-2,business,,multi_framework_llm,,,,easy,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+en-1,environment,False,dharmanet_full,0.333,50,0,hard,1.0,1.0,True,7,5,0.518,Highly Sensitive,0.6,evaluated,escalate_internal,Escalate internally with a deadline,0.999
+en-1,environment,False,dharmanet_no_dharma,0.333,0,0,hard,1.0,1.0,True,7,5,0.59,Moderately Sensitive,0.6,evaluated,escalate_internal,Escalate internally with a deadline,0.999
+en-1,environment,,plain_llm,,,,hard,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+en-1,environment,,single_framework_llm,,,,hard,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+en-1,environment,,multi_framework_llm,,,,hard,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+en-2,environment,False,dharmanet_full,1.0,50,0,medium,1.0,1.0,True,7,3,0.327,Highly Sensitive,0.75,evaluated,escalate_internal,Raise it through proper internal channels,0.589
+en-2,environment,False,dharmanet_no_dharma,1.0,0,0,medium,1.0,1.0,True,7,3,0.392,Highly Sensitive,0.75,evaluated,escalate_internal,Raise it through proper internal channels,0.617
+en-2,environment,,plain_llm,,,,medium,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+en-2,environment,,single_framework_llm,,,,medium,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+en-2,environment,,multi_framework_llm,,,,medium,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+pp-1,public_policy,False,dharmanet_full,0.5,54,0,highly_conflicting,1.0,1.0,True,7,4,0.362,Highly Sensitive,1.0,evaluated,escalate_internal,Raise with the senior clinician / ethics committee,0.786
+pp-1,public_policy,False,dharmanet_no_dharma,0.5,0,0,highly_conflicting,1.0,1.0,True,7,4,0.428,Highly Sensitive,1.0,evaluated,escalate_internal,Raise with the senior clinician / ethics committee,0.795
+pp-1,public_policy,,plain_llm,,,,highly_conflicting,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+pp-1,public_policy,,single_framework_llm,,,,highly_conflicting,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+pp-1,public_policy,,multi_framework_llm,,,,highly_conflicting,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+pp-2,public_policy,False,dharmanet_full,0.0,59,0,medium,1.0,1.0,True,7,4,0.623,Moderately Sensitive,0.75,evaluated,escalate_internal,Raise it through proper internal channels,1.0
+pp-2,public_policy,False,dharmanet_no_dharma,0.0,0,0,medium,1.0,1.0,True,7,4,0.706,Moderately Sensitive,0.75,evaluated,escalate_internal,Raise it through proper internal channels,1.0
+pp-2,public_policy,,plain_llm,,,,medium,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+pp-2,public_policy,,single_framework_llm,,,,medium,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+pp-2,public_policy,,multi_framework_llm,,,,medium,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+fs-1,family_social,False,dharmanet_full,1.0,71,0,medium,1.0,1.0,True,7,3,0.648,Moderately Sensitive,1.0,evaluated,escalate_internal,Talk to the person involved first,1.0
+fs-1,family_social,False,dharmanet_no_dharma,1.0,0,0,medium,1.0,1.0,True,7,3,0.705,Moderately Sensitive,1.0,evaluated,escalate_internal,Talk to the person involved first,1.0
+fs-1,family_social,,plain_llm,,,,medium,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+fs-1,family_social,,single_framework_llm,,,,medium,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+fs-1,family_social,,multi_framework_llm,,,,medium,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+fs-2,family_social,False,dharmanet_full,0.5,56,0,hard,1.0,1.0,True,7,2,0.646,Moderately Sensitive,0.667,evaluated,escalate_internal,Talk to the person involved first,1.0
+fs-2,family_social,False,dharmanet_no_dharma,0.5,0,0,hard,1.0,1.0,True,7,2,0.701,Moderately Sensitive,0.667,evaluated,escalate_internal,Talk to the person involved first,0.999
+fs-2,family_social,,plain_llm,,,,hard,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+fs-2,family_social,,single_framework_llm,,,,hard,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+fs-2,family_social,,multi_framework_llm,,,,hard,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+pf-1,professional,False,dharmanet_full,0.0,50,0,hard,1.0,1.0,True,7,3,0.64,Moderately Sensitive,0.5,evaluated,escalate_internal,Escalate internally with a deadline,1.0
+pf-1,professional,False,dharmanet_no_dharma,0.0,0,0,hard,1.0,1.0,True,7,3,0.71,Moderately Sensitive,0.5,evaluated,escalate_internal,Escalate internally with a deadline,0.999
+pf-1,professional,,plain_llm,,,,hard,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+pf-1,professional,,single_framework_llm,,,,hard,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+pf-1,professional,,multi_framework_llm,,,,hard,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+pf-2,professional,False,dharmanet_full,0.5,55,0,easy,1.0,1.0,True,7,2,0.521,Highly Sensitive,0.667,evaluated,escalate_internal,Raise it through proper internal channels,0.999
+pf-2,professional,False,dharmanet_no_dharma,0.5,0,0,easy,1.0,1.0,True,7,2,0.613,Moderately Sensitive,0.667,evaluated,escalate_internal,Raise it through proper internal channels,0.998
+pf-2,professional,,plain_llm,,,,easy,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+pf-2,professional,,single_framework_llm,,,,easy,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+pf-2,professional,,multi_framework_llm,,,,easy,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+tg-1,technology_governance,False,dharmanet_full,0.0,56,0,medium,1.0,1.0,True,7,2,0.522,Highly Sensitive,0.5,evaluated,escalate_internal,Escalate to the responsible-AI / privacy team,1.0
+tg-1,technology_governance,False,dharmanet_no_dharma,0.0,0,0,medium,1.0,1.0,True,7,2,0.59,Moderately Sensitive,0.5,evaluated,escalate_internal,Escalate to the responsible-AI / privacy team,1.0
+tg-1,technology_governance,,plain_llm,,,,medium,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+tg-1,technology_governance,,single_framework_llm,,,,medium,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+tg-1,technology_governance,,multi_framework_llm,,,,medium,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+tg-2,technology_governance,False,dharmanet_full,0.5,47,0,highly_conflicting,1.0,1.0,True,7,2,0.538,Highly Sensitive,0.667,evaluated,escalate_internal,Raise it through proper internal channels,1.0
+tg-2,technology_governance,False,dharmanet_no_dharma,0.5,0,0,highly_conflicting,1.0,1.0,True,7,2,0.574,Moderately Sensitive,0.667,evaluated,escalate_internal,Raise it through proper internal channels,1.0
+tg-2,technology_governance,,plain_llm,,,,highly_conflicting,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+tg-2,technology_governance,,single_framework_llm,,,,highly_conflicting,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,
+tg-2,technology_governance,,multi_framework_llm,,,,highly_conflicting,,,,,,,,,NOT YET EVALUATED (no LLM provider configured),,,

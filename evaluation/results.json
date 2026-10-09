@@ -1,0 +1,2288 @@
+{
+  "generated_at": "2026-10-05T04:40:38.797324+00:00",
+  "runtime_s": 14.8,
+  "engine": {
+    "provider": "heuristic",
+    "model": "dharmanet-heuristic-0.1",
+    "is_llm": false,
+    "note": "Offline transparent keyword/rule engine \u2014 reproducible, but it does not understand language like an LLM. Configure an LLM provider for richer semantic analysis."
+  },
+  "versions": {
+    "system_version": "0.1.0",
+    "analysis_version": "0.1.0",
+    "framework_version": "0.1",
+    "scoring_version": "0.1",
+    "sensitivity_version": "0.1",
+    "prompt_version": "0.1",
+    "heuristic_engine_version": "0.1",
+    "dharma_kb_version": "0.1"
+  },
+  "n_cases": 22,
+  "conditions": {
+    "plain_llm": {
+      "status": "NOT YET EVALUATED"
+    },
+    "single_framework_llm": {
+      "status": "NOT YET EVALUATED"
+    },
+    "multi_framework_llm": {
+      "status": "NOT YET EVALUATED"
+    },
+    "dharmanet_no_dharma": {
+      "stakeholder_coverage": 0.73,
+      "conflict_coverage": 0.439,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n": 22
+    },
+    "dharmanet_full": {
+      "stakeholder_coverage": 0.73,
+      "conflict_coverage": 0.439,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n": 22
+    }
+  },
+  "stability_distribution_full": {
+    "Stable": 0,
+    "Moderately Sensitive": 8,
+    "Highly Sensitive": 14
+  },
+  "robustness_full": {
+    "irrelevant_name": {
+      "n_cases": 22,
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.007
+    },
+    "irrelevant_context": {
+      "n_cases": 22,
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.003
+    },
+    "contradictory_info": {
+      "n_cases": 22,
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.017
+    },
+    "missing_info": {
+      "n_cases": 22,
+      "top_agreement": 0.955,
+      "mean_abs_score_diff": 0.061
+    },
+    "paraphrase": {
+      "n_cases": 6,
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.052
+    }
+  },
+  "model_change_robustness": "NOT YET EVALUATED (requires runs with \u22652 LLM providers)",
+  "dharma_ablation": {
+    "cases_where_top_action_changes": 0,
+    "n": 22,
+    "detail": [
+      {
+        "case_id": "hc-1",
+        "full_top": "Raise with the senior clinician / ethics committee",
+        "no_dharma_top": "Raise with the senior clinician / ethics committee"
+      },
+      {
+        "case_id": "hc-2",
+        "full_top": "Raise with the senior clinician / ethics committee",
+        "no_dharma_top": "Raise with the senior clinician / ethics committee"
+      },
+      {
+        "case_id": "wp-1",
+        "full_top": "Escalate internally with a deadline",
+        "no_dharma_top": "Escalate internally with a deadline"
+      },
+      {
+        "case_id": "wp-2",
+        "full_top": "Escalate internally with a deadline",
+        "no_dharma_top": "Escalate internally with a deadline"
+      },
+      {
+        "case_id": "ed-1",
+        "full_top": "Talk to the student / person involved first",
+        "no_dharma_top": "Talk to the student / person involved first"
+      },
+      {
+        "case_id": "ed-2",
+        "full_top": "Talk to the student / person involved first",
+        "no_dharma_top": "Talk to the student / person involved first"
+      },
+      {
+        "case_id": "ai-1",
+        "full_top": "Escalate to the responsible-AI / privacy team",
+        "no_dharma_top": "Escalate to the responsible-AI / privacy team"
+      },
+      {
+        "case_id": "ai-2",
+        "full_top": "Raise with the senior clinician / ethics committee",
+        "no_dharma_top": "Raise with the senior clinician / ethics committee"
+      },
+      {
+        "case_id": "pr-1",
+        "full_top": "Raise it through proper internal channels",
+        "no_dharma_top": "Raise it through proper internal channels"
+      },
+      {
+        "case_id": "pr-2",
+        "full_top": "Escalate internally with a deadline",
+        "no_dharma_top": "Escalate internally with a deadline"
+      },
+      {
+        "case_id": "bz-1",
+        "full_top": "Escalate internally with a deadline",
+        "no_dharma_top": "Escalate internally with a deadline"
+      },
+      {
+        "case_id": "bz-2",
+        "full_top": "Raise it through proper internal channels",
+        "no_dharma_top": "Raise it through proper internal channels"
+      },
+      {
+        "case_id": "en-1",
+        "full_top": "Escalate internally with a deadline",
+        "no_dharma_top": "Escalate internally with a deadline"
+      },
+      {
+        "case_id": "en-2",
+        "full_top": "Raise it through proper internal channels",
+        "no_dharma_top": "Raise it through proper internal channels"
+      },
+      {
+        "case_id": "pp-1",
+        "full_top": "Raise with the senior clinician / ethics committee",
+        "no_dharma_top": "Raise with the senior clinician / ethics committee"
+      },
+      {
+        "case_id": "pp-2",
+        "full_top": "Raise it through proper internal channels",
+        "no_dharma_top": "Raise it through proper internal channels"
+      },
+      {
+        "case_id": "fs-1",
+        "full_top": "Talk to the person involved first",
+        "no_dharma_top": "Talk to the person involved first"
+      },
+      {
+        "case_id": "fs-2",
+        "full_top": "Talk to the person involved first",
+        "no_dharma_top": "Talk to the person involved first"
+      },
+      {
+        "case_id": "pf-1",
+        "full_top": "Escalate internally with a deadline",
+        "no_dharma_top": "Escalate internally with a deadline"
+      },
+      {
+        "case_id": "pf-2",
+        "full_top": "Raise it through proper internal channels",
+        "no_dharma_top": "Raise it through proper internal channels"
+      },
+      {
+        "case_id": "tg-1",
+        "full_top": "Escalate to the responsible-AI / privacy team",
+        "no_dharma_top": "Escalate to the responsible-AI / privacy team"
+      },
+      {
+        "case_id": "tg-2",
+        "full_top": "Raise it through proper internal channels",
+        "no_dharma_top": "Raise it through proper internal channels"
+      }
+    ]
+  },
+  "human_evaluation": "NOT YET EVALUATED",
+  "rows": [
+    {
+      "case_id": "hc-1",
+      "category": "healthcare",
+      "difficulty": "medium",
+      "condition": "dharmanet_full",
+      "status": "evaluated",
+      "stakeholder_coverage": 0.75,
+      "conflict_coverage": 0.667,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 4,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Raise with the senior clinician / ethics committee",
+      "clear_preference": false,
+      "stability_label": "Highly Sensitive",
+      "weight_stability": 0.99,
+      "score_stability": 0.418,
+      "dharma_citations": 50,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "hc-1",
+      "category": "healthcare",
+      "difficulty": "medium",
+      "condition": "dharmanet_no_dharma",
+      "status": "evaluated",
+      "stakeholder_coverage": 0.75,
+      "conflict_coverage": 0.667,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 4,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Raise with the senior clinician / ethics committee",
+      "clear_preference": false,
+      "stability_label": "Highly Sensitive",
+      "weight_stability": 0.974,
+      "score_stability": 0.475,
+      "dharma_citations": 0,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "hc-1",
+      "category": "healthcare",
+      "difficulty": "medium",
+      "condition": "plain_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "hc-1",
+      "category": "healthcare",
+      "difficulty": "medium",
+      "condition": "single_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "hc-1",
+      "category": "healthcare",
+      "difficulty": "medium",
+      "condition": "multi_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "hc-2",
+      "category": "healthcare",
+      "difficulty": "highly_conflicting",
+      "condition": "dharmanet_full",
+      "status": "evaluated",
+      "stakeholder_coverage": 1.0,
+      "conflict_coverage": 1.0,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 3,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Raise with the senior clinician / ethics committee",
+      "clear_preference": false,
+      "stability_label": "Highly Sensitive",
+      "weight_stability": 0.979,
+      "score_stability": 0.4,
+      "dharma_citations": 59,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "hc-2",
+      "category": "healthcare",
+      "difficulty": "highly_conflicting",
+      "condition": "dharmanet_no_dharma",
+      "status": "evaluated",
+      "stakeholder_coverage": 1.0,
+      "conflict_coverage": 1.0,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 3,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Raise with the senior clinician / ethics committee",
+      "clear_preference": false,
+      "stability_label": "Highly Sensitive",
+      "weight_stability": 0.974,
+      "score_stability": 0.462,
+      "dharma_citations": 0,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "hc-2",
+      "category": "healthcare",
+      "difficulty": "highly_conflicting",
+      "condition": "plain_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "hc-2",
+      "category": "healthcare",
+      "difficulty": "highly_conflicting",
+      "condition": "single_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "hc-2",
+      "category": "healthcare",
+      "difficulty": "highly_conflicting",
+      "condition": "multi_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "wp-1",
+      "category": "workplace",
+      "difficulty": "hard",
+      "condition": "dharmanet_full",
+      "status": "evaluated",
+      "stakeholder_coverage": 1.0,
+      "conflict_coverage": 1.0,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 4,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Escalate internally with a deadline",
+      "clear_preference": false,
+      "stability_label": "Highly Sensitive",
+      "weight_stability": 1.0,
+      "score_stability": 0.481,
+      "dharma_citations": 55,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "wp-1",
+      "category": "workplace",
+      "difficulty": "hard",
+      "condition": "dharmanet_no_dharma",
+      "status": "evaluated",
+      "stakeholder_coverage": 1.0,
+      "conflict_coverage": 1.0,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 4,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Escalate internally with a deadline",
+      "clear_preference": false,
+      "stability_label": "Moderately Sensitive",
+      "weight_stability": 1.0,
+      "score_stability": 0.556,
+      "dharma_citations": 0,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "wp-1",
+      "category": "workplace",
+      "difficulty": "hard",
+      "condition": "plain_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "wp-1",
+      "category": "workplace",
+      "difficulty": "hard",
+      "condition": "single_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "wp-1",
+      "category": "workplace",
+      "difficulty": "hard",
+      "condition": "multi_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "wp-2",
+      "category": "workplace",
+      "difficulty": "easy",
+      "condition": "dharmanet_full",
+      "status": "evaluated",
+      "stakeholder_coverage": 1.0,
+      "conflict_coverage": 0.5,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 4,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Escalate internally with a deadline",
+      "clear_preference": false,
+      "stability_label": "Moderately Sensitive",
+      "weight_stability": 1.0,
+      "score_stability": 0.621,
+      "dharma_citations": 61,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "wp-2",
+      "category": "workplace",
+      "difficulty": "easy",
+      "condition": "dharmanet_no_dharma",
+      "status": "evaluated",
+      "stakeholder_coverage": 1.0,
+      "conflict_coverage": 0.5,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 4,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Escalate internally with a deadline",
+      "clear_preference": false,
+      "stability_label": "Moderately Sensitive",
+      "weight_stability": 1.0,
+      "score_stability": 0.682,
+      "dharma_citations": 0,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "wp-2",
+      "category": "workplace",
+      "difficulty": "easy",
+      "condition": "plain_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "wp-2",
+      "category": "workplace",
+      "difficulty": "easy",
+      "condition": "single_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "wp-2",
+      "category": "workplace",
+      "difficulty": "easy",
+      "condition": "multi_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "ed-1",
+      "category": "education",
+      "difficulty": "medium",
+      "condition": "dharmanet_full",
+      "status": "evaluated",
+      "stakeholder_coverage": 0.75,
+      "conflict_coverage": 0.5,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 4,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Talk to the student / person involved first",
+      "clear_preference": false,
+      "stability_label": "Highly Sensitive",
+      "weight_stability": 0.981,
+      "score_stability": 0.464,
+      "dharma_citations": 49,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "ed-1",
+      "category": "education",
+      "difficulty": "medium",
+      "condition": "dharmanet_no_dharma",
+      "status": "evaluated",
+      "stakeholder_coverage": 0.75,
+      "conflict_coverage": 0.5,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 4,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Talk to the student / person involved first",
+      "clear_preference": false,
+      "stability_label": "Highly Sensitive",
+      "weight_stability": 0.983,
+      "score_stability": 0.543,
+      "dharma_citations": 0,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "ed-1",
+      "category": "education",
+      "difficulty": "medium",
+      "condition": "plain_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "ed-1",
+      "category": "education",
+      "difficulty": "medium",
+      "condition": "single_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "ed-1",
+      "category": "education",
+      "difficulty": "medium",
+      "condition": "multi_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "ed-2",
+      "category": "education",
+      "difficulty": "hard",
+      "condition": "dharmanet_full",
+      "status": "evaluated",
+      "stakeholder_coverage": 0.25,
+      "conflict_coverage": 0.333,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 3,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Talk to the student / person involved first",
+      "clear_preference": false,
+      "stability_label": "Highly Sensitive",
+      "weight_stability": 0.923,
+      "score_stability": 0.387,
+      "dharma_citations": 49,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "ed-2",
+      "category": "education",
+      "difficulty": "hard",
+      "condition": "dharmanet_no_dharma",
+      "status": "evaluated",
+      "stakeholder_coverage": 0.25,
+      "conflict_coverage": 0.333,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 3,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Talk to the student / person involved first",
+      "clear_preference": false,
+      "stability_label": "Highly Sensitive",
+      "weight_stability": 0.944,
+      "score_stability": 0.483,
+      "dharma_citations": 0,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "ed-2",
+      "category": "education",
+      "difficulty": "hard",
+      "condition": "plain_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "ed-2",
+      "category": "education",
+      "difficulty": "hard",
+      "condition": "single_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "ed-2",
+      "category": "education",
+      "difficulty": "hard",
+      "condition": "multi_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "ai-1",
+      "category": "ai_ethics",
+      "difficulty": "hard",
+      "condition": "dharmanet_full",
+      "status": "evaluated",
+      "stakeholder_coverage": 0.5,
+      "conflict_coverage": 0.333,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 3,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Escalate to the responsible-AI / privacy team",
+      "clear_preference": false,
+      "stability_label": "Moderately Sensitive",
+      "weight_stability": 1.0,
+      "score_stability": 0.667,
+      "dharma_citations": 61,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "ai-1",
+      "category": "ai_ethics",
+      "difficulty": "hard",
+      "condition": "dharmanet_no_dharma",
+      "status": "evaluated",
+      "stakeholder_coverage": 0.5,
+      "conflict_coverage": 0.333,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 3,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Escalate to the responsible-AI / privacy team",
+      "clear_preference": false,
+      "stability_label": "Moderately Sensitive",
+      "weight_stability": 1.0,
+      "score_stability": 0.708,
+      "dharma_citations": 0,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "ai-1",
+      "category": "ai_ethics",
+      "difficulty": "hard",
+      "condition": "plain_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "ai-1",
+      "category": "ai_ethics",
+      "difficulty": "hard",
+      "condition": "single_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "ai-1",
+      "category": "ai_ethics",
+      "difficulty": "hard",
+      "condition": "multi_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "ai-2",
+      "category": "ai_ethics",
+      "difficulty": "medium",
+      "condition": "dharmanet_full",
+      "status": "evaluated",
+      "stakeholder_coverage": 1.0,
+      "conflict_coverage": 0.0,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 3,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Raise with the senior clinician / ethics committee",
+      "clear_preference": false,
+      "stability_label": "Moderately Sensitive",
+      "weight_stability": 1.0,
+      "score_stability": 0.607,
+      "dharma_citations": 47,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "ai-2",
+      "category": "ai_ethics",
+      "difficulty": "medium",
+      "condition": "dharmanet_no_dharma",
+      "status": "evaluated",
+      "stakeholder_coverage": 1.0,
+      "conflict_coverage": 0.0,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 3,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Raise with the senior clinician / ethics committee",
+      "clear_preference": false,
+      "stability_label": "Moderately Sensitive",
+      "weight_stability": 1.0,
+      "score_stability": 0.66,
+      "dharma_citations": 0,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "ai-2",
+      "category": "ai_ethics",
+      "difficulty": "medium",
+      "condition": "plain_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "ai-2",
+      "category": "ai_ethics",
+      "difficulty": "medium",
+      "condition": "single_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "ai-2",
+      "category": "ai_ethics",
+      "difficulty": "medium",
+      "condition": "multi_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "pr-1",
+      "category": "privacy",
+      "difficulty": "hard",
+      "condition": "dharmanet_full",
+      "status": "evaluated",
+      "stakeholder_coverage": 0.6,
+      "conflict_coverage": 0.5,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 3,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Raise it through proper internal channels",
+      "clear_preference": false,
+      "stability_label": "Highly Sensitive",
+      "weight_stability": 0.989,
+      "score_stability": 0.423,
+      "dharma_citations": 54,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "pr-1",
+      "category": "privacy",
+      "difficulty": "hard",
+      "condition": "dharmanet_no_dharma",
+      "status": "evaluated",
+      "stakeholder_coverage": 0.6,
+      "conflict_coverage": 0.5,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 3,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Raise it through proper internal channels",
+      "clear_preference": false,
+      "stability_label": "Highly Sensitive",
+      "weight_stability": 0.975,
+      "score_stability": 0.485,
+      "dharma_citations": 0,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "pr-1",
+      "category": "privacy",
+      "difficulty": "hard",
+      "condition": "plain_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "pr-1",
+      "category": "privacy",
+      "difficulty": "hard",
+      "condition": "single_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "pr-1",
+      "category": "privacy",
+      "difficulty": "hard",
+      "condition": "multi_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "pr-2",
+      "category": "privacy",
+      "difficulty": "easy",
+      "condition": "dharmanet_full",
+      "status": "evaluated",
+      "stakeholder_coverage": 0.75,
+      "conflict_coverage": 0.0,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 4,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Escalate internally with a deadline",
+      "clear_preference": false,
+      "stability_label": "Highly Sensitive",
+      "weight_stability": 0.999,
+      "score_stability": 0.514,
+      "dharma_citations": 53,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "pr-2",
+      "category": "privacy",
+      "difficulty": "easy",
+      "condition": "dharmanet_no_dharma",
+      "status": "evaluated",
+      "stakeholder_coverage": 0.75,
+      "conflict_coverage": 0.0,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 4,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Escalate internally with a deadline",
+      "clear_preference": false,
+      "stability_label": "Moderately Sensitive",
+      "weight_stability": 0.999,
+      "score_stability": 0.593,
+      "dharma_citations": 0,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "pr-2",
+      "category": "privacy",
+      "difficulty": "easy",
+      "condition": "plain_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "pr-2",
+      "category": "privacy",
+      "difficulty": "easy",
+      "condition": "single_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "pr-2",
+      "category": "privacy",
+      "difficulty": "easy",
+      "condition": "multi_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "bz-1",
+      "category": "business",
+      "difficulty": "medium",
+      "condition": "dharmanet_full",
+      "status": "evaluated",
+      "stakeholder_coverage": 0.6,
+      "conflict_coverage": 0.0,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 3,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Escalate internally with a deadline",
+      "clear_preference": false,
+      "stability_label": "Highly Sensitive",
+      "weight_stability": 0.999,
+      "score_stability": 0.484,
+      "dharma_citations": 54,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "bz-1",
+      "category": "business",
+      "difficulty": "medium",
+      "condition": "dharmanet_no_dharma",
+      "status": "evaluated",
+      "stakeholder_coverage": 0.6,
+      "conflict_coverage": 0.0,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 3,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Escalate internally with a deadline",
+      "clear_preference": false,
+      "stability_label": "Moderately Sensitive",
+      "weight_stability": 0.998,
+      "score_stability": 0.551,
+      "dharma_citations": 0,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "bz-1",
+      "category": "business",
+      "difficulty": "medium",
+      "condition": "plain_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "bz-1",
+      "category": "business",
+      "difficulty": "medium",
+      "condition": "single_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "bz-1",
+      "category": "business",
+      "difficulty": "medium",
+      "condition": "multi_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "bz-2",
+      "category": "business",
+      "difficulty": "easy",
+      "condition": "dharmanet_full",
+      "status": "evaluated",
+      "stakeholder_coverage": 0.75,
+      "conflict_coverage": 0.5,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 3,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Raise it through proper internal channels",
+      "clear_preference": false,
+      "stability_label": "Moderately Sensitive",
+      "weight_stability": 1.0,
+      "score_stability": 0.566,
+      "dharma_citations": 50,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "bz-2",
+      "category": "business",
+      "difficulty": "easy",
+      "condition": "dharmanet_no_dharma",
+      "status": "evaluated",
+      "stakeholder_coverage": 0.75,
+      "conflict_coverage": 0.5,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 3,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Raise it through proper internal channels",
+      "clear_preference": false,
+      "stability_label": "Moderately Sensitive",
+      "weight_stability": 0.997,
+      "score_stability": 0.622,
+      "dharma_citations": 0,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "bz-2",
+      "category": "business",
+      "difficulty": "easy",
+      "condition": "plain_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "bz-2",
+      "category": "business",
+      "difficulty": "easy",
+      "condition": "single_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "bz-2",
+      "category": "business",
+      "difficulty": "easy",
+      "condition": "multi_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "en-1",
+      "category": "environment",
+      "difficulty": "hard",
+      "condition": "dharmanet_full",
+      "status": "evaluated",
+      "stakeholder_coverage": 0.6,
+      "conflict_coverage": 0.333,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 5,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Escalate internally with a deadline",
+      "clear_preference": false,
+      "stability_label": "Highly Sensitive",
+      "weight_stability": 0.999,
+      "score_stability": 0.518,
+      "dharma_citations": 50,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "en-1",
+      "category": "environment",
+      "difficulty": "hard",
+      "condition": "dharmanet_no_dharma",
+      "status": "evaluated",
+      "stakeholder_coverage": 0.6,
+      "conflict_coverage": 0.333,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 5,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Escalate internally with a deadline",
+      "clear_preference": false,
+      "stability_label": "Moderately Sensitive",
+      "weight_stability": 0.999,
+      "score_stability": 0.59,
+      "dharma_citations": 0,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "en-1",
+      "category": "environment",
+      "difficulty": "hard",
+      "condition": "plain_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "en-1",
+      "category": "environment",
+      "difficulty": "hard",
+      "condition": "single_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "en-1",
+      "category": "environment",
+      "difficulty": "hard",
+      "condition": "multi_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "en-2",
+      "category": "environment",
+      "difficulty": "medium",
+      "condition": "dharmanet_full",
+      "status": "evaluated",
+      "stakeholder_coverage": 0.75,
+      "conflict_coverage": 1.0,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 3,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Raise it through proper internal channels",
+      "clear_preference": false,
+      "stability_label": "Highly Sensitive",
+      "weight_stability": 0.589,
+      "score_stability": 0.327,
+      "dharma_citations": 50,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "en-2",
+      "category": "environment",
+      "difficulty": "medium",
+      "condition": "dharmanet_no_dharma",
+      "status": "evaluated",
+      "stakeholder_coverage": 0.75,
+      "conflict_coverage": 1.0,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 3,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Raise it through proper internal channels",
+      "clear_preference": false,
+      "stability_label": "Highly Sensitive",
+      "weight_stability": 0.617,
+      "score_stability": 0.392,
+      "dharma_citations": 0,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "en-2",
+      "category": "environment",
+      "difficulty": "medium",
+      "condition": "plain_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "en-2",
+      "category": "environment",
+      "difficulty": "medium",
+      "condition": "single_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "en-2",
+      "category": "environment",
+      "difficulty": "medium",
+      "condition": "multi_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "pp-1",
+      "category": "public_policy",
+      "difficulty": "highly_conflicting",
+      "condition": "dharmanet_full",
+      "status": "evaluated",
+      "stakeholder_coverage": 1.0,
+      "conflict_coverage": 0.5,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 4,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Raise with the senior clinician / ethics committee",
+      "clear_preference": false,
+      "stability_label": "Highly Sensitive",
+      "weight_stability": 0.786,
+      "score_stability": 0.362,
+      "dharma_citations": 54,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "pp-1",
+      "category": "public_policy",
+      "difficulty": "highly_conflicting",
+      "condition": "dharmanet_no_dharma",
+      "status": "evaluated",
+      "stakeholder_coverage": 1.0,
+      "conflict_coverage": 0.5,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 4,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Raise with the senior clinician / ethics committee",
+      "clear_preference": false,
+      "stability_label": "Highly Sensitive",
+      "weight_stability": 0.795,
+      "score_stability": 0.428,
+      "dharma_citations": 0,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "pp-1",
+      "category": "public_policy",
+      "difficulty": "highly_conflicting",
+      "condition": "plain_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "pp-1",
+      "category": "public_policy",
+      "difficulty": "highly_conflicting",
+      "condition": "single_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "pp-1",
+      "category": "public_policy",
+      "difficulty": "highly_conflicting",
+      "condition": "multi_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "pp-2",
+      "category": "public_policy",
+      "difficulty": "medium",
+      "condition": "dharmanet_full",
+      "status": "evaluated",
+      "stakeholder_coverage": 0.75,
+      "conflict_coverage": 0.0,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 4,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Raise it through proper internal channels",
+      "clear_preference": false,
+      "stability_label": "Moderately Sensitive",
+      "weight_stability": 1.0,
+      "score_stability": 0.623,
+      "dharma_citations": 59,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "pp-2",
+      "category": "public_policy",
+      "difficulty": "medium",
+      "condition": "dharmanet_no_dharma",
+      "status": "evaluated",
+      "stakeholder_coverage": 0.75,
+      "conflict_coverage": 0.0,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 4,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Raise it through proper internal channels",
+      "clear_preference": false,
+      "stability_label": "Moderately Sensitive",
+      "weight_stability": 1.0,
+      "score_stability": 0.706,
+      "dharma_citations": 0,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "pp-2",
+      "category": "public_policy",
+      "difficulty": "medium",
+      "condition": "plain_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "pp-2",
+      "category": "public_policy",
+      "difficulty": "medium",
+      "condition": "single_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "pp-2",
+      "category": "public_policy",
+      "difficulty": "medium",
+      "condition": "multi_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "fs-1",
+      "category": "family_social",
+      "difficulty": "medium",
+      "condition": "dharmanet_full",
+      "status": "evaluated",
+      "stakeholder_coverage": 1.0,
+      "conflict_coverage": 1.0,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 3,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Talk to the person involved first",
+      "clear_preference": false,
+      "stability_label": "Moderately Sensitive",
+      "weight_stability": 1.0,
+      "score_stability": 0.648,
+      "dharma_citations": 71,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "fs-1",
+      "category": "family_social",
+      "difficulty": "medium",
+      "condition": "dharmanet_no_dharma",
+      "status": "evaluated",
+      "stakeholder_coverage": 1.0,
+      "conflict_coverage": 1.0,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 3,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Talk to the person involved first",
+      "clear_preference": false,
+      "stability_label": "Moderately Sensitive",
+      "weight_stability": 1.0,
+      "score_stability": 0.705,
+      "dharma_citations": 0,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "fs-1",
+      "category": "family_social",
+      "difficulty": "medium",
+      "condition": "plain_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "fs-1",
+      "category": "family_social",
+      "difficulty": "medium",
+      "condition": "single_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "fs-1",
+      "category": "family_social",
+      "difficulty": "medium",
+      "condition": "multi_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "fs-2",
+      "category": "family_social",
+      "difficulty": "hard",
+      "condition": "dharmanet_full",
+      "status": "evaluated",
+      "stakeholder_coverage": 0.667,
+      "conflict_coverage": 0.5,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 2,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Talk to the person involved first",
+      "clear_preference": false,
+      "stability_label": "Moderately Sensitive",
+      "weight_stability": 1.0,
+      "score_stability": 0.646,
+      "dharma_citations": 56,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "fs-2",
+      "category": "family_social",
+      "difficulty": "hard",
+      "condition": "dharmanet_no_dharma",
+      "status": "evaluated",
+      "stakeholder_coverage": 0.667,
+      "conflict_coverage": 0.5,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 2,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Talk to the person involved first",
+      "clear_preference": false,
+      "stability_label": "Moderately Sensitive",
+      "weight_stability": 0.999,
+      "score_stability": 0.701,
+      "dharma_citations": 0,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "fs-2",
+      "category": "family_social",
+      "difficulty": "hard",
+      "condition": "plain_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "fs-2",
+      "category": "family_social",
+      "difficulty": "hard",
+      "condition": "single_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "fs-2",
+      "category": "family_social",
+      "difficulty": "hard",
+      "condition": "multi_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "pf-1",
+      "category": "professional",
+      "difficulty": "hard",
+      "condition": "dharmanet_full",
+      "status": "evaluated",
+      "stakeholder_coverage": 0.5,
+      "conflict_coverage": 0.0,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 3,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Escalate internally with a deadline",
+      "clear_preference": false,
+      "stability_label": "Moderately Sensitive",
+      "weight_stability": 1.0,
+      "score_stability": 0.64,
+      "dharma_citations": 50,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "pf-1",
+      "category": "professional",
+      "difficulty": "hard",
+      "condition": "dharmanet_no_dharma",
+      "status": "evaluated",
+      "stakeholder_coverage": 0.5,
+      "conflict_coverage": 0.0,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 3,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Escalate internally with a deadline",
+      "clear_preference": false,
+      "stability_label": "Moderately Sensitive",
+      "weight_stability": 0.999,
+      "score_stability": 0.71,
+      "dharma_citations": 0,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "pf-1",
+      "category": "professional",
+      "difficulty": "hard",
+      "condition": "plain_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "pf-1",
+      "category": "professional",
+      "difficulty": "hard",
+      "condition": "single_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "pf-1",
+      "category": "professional",
+      "difficulty": "hard",
+      "condition": "multi_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "pf-2",
+      "category": "professional",
+      "difficulty": "easy",
+      "condition": "dharmanet_full",
+      "status": "evaluated",
+      "stakeholder_coverage": 0.667,
+      "conflict_coverage": 0.5,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 2,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Raise it through proper internal channels",
+      "clear_preference": false,
+      "stability_label": "Highly Sensitive",
+      "weight_stability": 0.999,
+      "score_stability": 0.521,
+      "dharma_citations": 55,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "pf-2",
+      "category": "professional",
+      "difficulty": "easy",
+      "condition": "dharmanet_no_dharma",
+      "status": "evaluated",
+      "stakeholder_coverage": 0.667,
+      "conflict_coverage": 0.5,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 2,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Raise it through proper internal channels",
+      "clear_preference": false,
+      "stability_label": "Moderately Sensitive",
+      "weight_stability": 0.998,
+      "score_stability": 0.613,
+      "dharma_citations": 0,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "pf-2",
+      "category": "professional",
+      "difficulty": "easy",
+      "condition": "plain_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "pf-2",
+      "category": "professional",
+      "difficulty": "easy",
+      "condition": "single_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "pf-2",
+      "category": "professional",
+      "difficulty": "easy",
+      "condition": "multi_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "tg-1",
+      "category": "technology_governance",
+      "difficulty": "medium",
+      "condition": "dharmanet_full",
+      "status": "evaluated",
+      "stakeholder_coverage": 0.5,
+      "conflict_coverage": 0.0,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 2,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Escalate to the responsible-AI / privacy team",
+      "clear_preference": false,
+      "stability_label": "Highly Sensitive",
+      "weight_stability": 1.0,
+      "score_stability": 0.522,
+      "dharma_citations": 56,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "tg-1",
+      "category": "technology_governance",
+      "difficulty": "medium",
+      "condition": "dharmanet_no_dharma",
+      "status": "evaluated",
+      "stakeholder_coverage": 0.5,
+      "conflict_coverage": 0.0,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 2,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Escalate to the responsible-AI / privacy team",
+      "clear_preference": false,
+      "stability_label": "Moderately Sensitive",
+      "weight_stability": 1.0,
+      "score_stability": 0.59,
+      "dharma_citations": 0,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "tg-1",
+      "category": "technology_governance",
+      "difficulty": "medium",
+      "condition": "plain_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "tg-1",
+      "category": "technology_governance",
+      "difficulty": "medium",
+      "condition": "single_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "tg-1",
+      "category": "technology_governance",
+      "difficulty": "medium",
+      "condition": "multi_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "tg-2",
+      "category": "technology_governance",
+      "difficulty": "highly_conflicting",
+      "condition": "dharmanet_full",
+      "status": "evaluated",
+      "stakeholder_coverage": 0.667,
+      "conflict_coverage": 0.5,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 2,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Raise it through proper internal channels",
+      "clear_preference": false,
+      "stability_label": "Highly Sensitive",
+      "weight_stability": 1.0,
+      "score_stability": 0.538,
+      "dharma_citations": 47,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "tg-2",
+      "category": "technology_governance",
+      "difficulty": "highly_conflicting",
+      "condition": "dharmanet_no_dharma",
+      "status": "evaluated",
+      "stakeholder_coverage": 0.667,
+      "conflict_coverage": 0.5,
+      "dimension_coverage": 1.0,
+      "explanation_completeness": 1.0,
+      "n_actions": 7,
+      "n_stakeholders": 2,
+      "has_uncertainty": true,
+      "top_action_kind": "escalate_internal",
+      "top_action_label": "Raise it through proper internal channels",
+      "clear_preference": false,
+      "stability_label": "Moderately Sensitive",
+      "weight_stability": 1.0,
+      "score_stability": 0.574,
+      "dharma_citations": 0,
+      "dharma_dropped_claims": 0
+    },
+    {
+      "case_id": "tg-2",
+      "category": "technology_governance",
+      "difficulty": "highly_conflicting",
+      "condition": "plain_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "tg-2",
+      "category": "technology_governance",
+      "difficulty": "highly_conflicting",
+      "condition": "single_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    },
+    {
+      "case_id": "tg-2",
+      "category": "technology_governance",
+      "difficulty": "highly_conflicting",
+      "condition": "multi_framework_llm",
+      "status": "NOT YET EVALUATED (no LLM provider configured)"
+    }
+  ],
+  "robustness_rows": [
+    {
+      "case_id": "hc-1",
+      "perturbation": "irrelevant_name",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.001,
+      "max_abs_score_diff": 0.001
+    },
+    {
+      "case_id": "hc-1",
+      "perturbation": "irrelevant_context",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.0,
+      "max_abs_score_diff": 0.0
+    },
+    {
+      "case_id": "hc-1",
+      "perturbation": "contradictory_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.001,
+      "max_abs_score_diff": 0.001
+    },
+    {
+      "case_id": "hc-1",
+      "perturbation": "missing_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.258,
+      "max_abs_score_diff": 0.258
+    },
+    {
+      "case_id": "hc-1",
+      "perturbation": "paraphrase",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.149,
+      "max_abs_score_diff": 0.149
+    },
+    {
+      "case_id": "hc-2",
+      "perturbation": "irrelevant_name",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.001,
+      "max_abs_score_diff": 0.001
+    },
+    {
+      "case_id": "hc-2",
+      "perturbation": "irrelevant_context",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.003,
+      "max_abs_score_diff": 0.003
+    },
+    {
+      "case_id": "hc-2",
+      "perturbation": "contradictory_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.0,
+      "max_abs_score_diff": 0.0
+    },
+    {
+      "case_id": "hc-2",
+      "perturbation": "missing_info",
+      "top_agreement": 0.0,
+      "mean_abs_score_diff": 0.077,
+      "max_abs_score_diff": 0.077
+    },
+    {
+      "case_id": "wp-1",
+      "perturbation": "irrelevant_name",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.001,
+      "max_abs_score_diff": 0.001
+    },
+    {
+      "case_id": "wp-1",
+      "perturbation": "irrelevant_context",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.0,
+      "max_abs_score_diff": 0.0
+    },
+    {
+      "case_id": "wp-1",
+      "perturbation": "contradictory_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.002,
+      "max_abs_score_diff": 0.002
+    },
+    {
+      "case_id": "wp-1",
+      "perturbation": "missing_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.165,
+      "max_abs_score_diff": 0.165
+    },
+    {
+      "case_id": "wp-1",
+      "perturbation": "paraphrase",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.053,
+      "max_abs_score_diff": 0.053
+    },
+    {
+      "case_id": "wp-2",
+      "perturbation": "irrelevant_name",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.012,
+      "max_abs_score_diff": 0.012
+    },
+    {
+      "case_id": "wp-2",
+      "perturbation": "irrelevant_context",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.001,
+      "max_abs_score_diff": 0.001
+    },
+    {
+      "case_id": "wp-2",
+      "perturbation": "contradictory_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.009,
+      "max_abs_score_diff": 0.009
+    },
+    {
+      "case_id": "wp-2",
+      "perturbation": "missing_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.025,
+      "max_abs_score_diff": 0.025
+    },
+    {
+      "case_id": "ed-1",
+      "perturbation": "irrelevant_name",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.0,
+      "max_abs_score_diff": 0.0
+    },
+    {
+      "case_id": "ed-1",
+      "perturbation": "irrelevant_context",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.0,
+      "max_abs_score_diff": 0.0
+    },
+    {
+      "case_id": "ed-1",
+      "perturbation": "contradictory_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.005,
+      "max_abs_score_diff": 0.005
+    },
+    {
+      "case_id": "ed-1",
+      "perturbation": "missing_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.075,
+      "max_abs_score_diff": 0.075
+    },
+    {
+      "case_id": "ed-1",
+      "perturbation": "paraphrase",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.048,
+      "max_abs_score_diff": 0.048
+    },
+    {
+      "case_id": "ed-2",
+      "perturbation": "irrelevant_name",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.001,
+      "max_abs_score_diff": 0.001
+    },
+    {
+      "case_id": "ed-2",
+      "perturbation": "irrelevant_context",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.017,
+      "max_abs_score_diff": 0.017
+    },
+    {
+      "case_id": "ed-2",
+      "perturbation": "contradictory_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.043,
+      "max_abs_score_diff": 0.043
+    },
+    {
+      "case_id": "ed-2",
+      "perturbation": "missing_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.055,
+      "max_abs_score_diff": 0.055
+    },
+    {
+      "case_id": "ai-1",
+      "perturbation": "irrelevant_name",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.03,
+      "max_abs_score_diff": 0.03
+    },
+    {
+      "case_id": "ai-1",
+      "perturbation": "irrelevant_context",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.008,
+      "max_abs_score_diff": 0.008
+    },
+    {
+      "case_id": "ai-1",
+      "perturbation": "contradictory_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.08,
+      "max_abs_score_diff": 0.08
+    },
+    {
+      "case_id": "ai-1",
+      "perturbation": "missing_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.1,
+      "max_abs_score_diff": 0.1
+    },
+    {
+      "case_id": "ai-1",
+      "perturbation": "paraphrase",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.047,
+      "max_abs_score_diff": 0.047
+    },
+    {
+      "case_id": "ai-2",
+      "perturbation": "irrelevant_name",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.039,
+      "max_abs_score_diff": 0.039
+    },
+    {
+      "case_id": "ai-2",
+      "perturbation": "irrelevant_context",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.0,
+      "max_abs_score_diff": 0.0
+    },
+    {
+      "case_id": "ai-2",
+      "perturbation": "contradictory_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.042,
+      "max_abs_score_diff": 0.042
+    },
+    {
+      "case_id": "ai-2",
+      "perturbation": "missing_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.014,
+      "max_abs_score_diff": 0.014
+    },
+    {
+      "case_id": "pr-1",
+      "perturbation": "irrelevant_name",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.0,
+      "max_abs_score_diff": 0.0
+    },
+    {
+      "case_id": "pr-1",
+      "perturbation": "irrelevant_context",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.003,
+      "max_abs_score_diff": 0.003
+    },
+    {
+      "case_id": "pr-1",
+      "perturbation": "contradictory_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.036,
+      "max_abs_score_diff": 0.036
+    },
+    {
+      "case_id": "pr-1",
+      "perturbation": "missing_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.083,
+      "max_abs_score_diff": 0.083
+    },
+    {
+      "case_id": "pr-2",
+      "perturbation": "irrelevant_name",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.0,
+      "max_abs_score_diff": 0.0
+    },
+    {
+      "case_id": "pr-2",
+      "perturbation": "irrelevant_context",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.003,
+      "max_abs_score_diff": 0.003
+    },
+    {
+      "case_id": "pr-2",
+      "perturbation": "contradictory_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.013,
+      "max_abs_score_diff": 0.013
+    },
+    {
+      "case_id": "pr-2",
+      "perturbation": "missing_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.018,
+      "max_abs_score_diff": 0.018
+    },
+    {
+      "case_id": "bz-1",
+      "perturbation": "irrelevant_name",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.001,
+      "max_abs_score_diff": 0.001
+    },
+    {
+      "case_id": "bz-1",
+      "perturbation": "irrelevant_context",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.0,
+      "max_abs_score_diff": 0.0
+    },
+    {
+      "case_id": "bz-1",
+      "perturbation": "contradictory_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.004,
+      "max_abs_score_diff": 0.004
+    },
+    {
+      "case_id": "bz-1",
+      "perturbation": "missing_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.01,
+      "max_abs_score_diff": 0.01
+    },
+    {
+      "case_id": "bz-2",
+      "perturbation": "irrelevant_name",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.04,
+      "max_abs_score_diff": 0.04
+    },
+    {
+      "case_id": "bz-2",
+      "perturbation": "irrelevant_context",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.005,
+      "max_abs_score_diff": 0.005
+    },
+    {
+      "case_id": "bz-2",
+      "perturbation": "contradictory_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.042,
+      "max_abs_score_diff": 0.042
+    },
+    {
+      "case_id": "bz-2",
+      "perturbation": "missing_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.01,
+      "max_abs_score_diff": 0.01
+    },
+    {
+      "case_id": "en-1",
+      "perturbation": "irrelevant_name",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.0,
+      "max_abs_score_diff": 0.0
+    },
+    {
+      "case_id": "en-1",
+      "perturbation": "irrelevant_context",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.0,
+      "max_abs_score_diff": 0.0
+    },
+    {
+      "case_id": "en-1",
+      "perturbation": "contradictory_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.0,
+      "max_abs_score_diff": 0.0
+    },
+    {
+      "case_id": "en-1",
+      "perturbation": "missing_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.03,
+      "max_abs_score_diff": 0.03
+    },
+    {
+      "case_id": "en-2",
+      "perturbation": "irrelevant_name",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.002,
+      "max_abs_score_diff": 0.002
+    },
+    {
+      "case_id": "en-2",
+      "perturbation": "irrelevant_context",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.006,
+      "max_abs_score_diff": 0.006
+    },
+    {
+      "case_id": "en-2",
+      "perturbation": "contradictory_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.005,
+      "max_abs_score_diff": 0.005
+    },
+    {
+      "case_id": "en-2",
+      "perturbation": "missing_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.086,
+      "max_abs_score_diff": 0.086
+    },
+    {
+      "case_id": "pp-1",
+      "perturbation": "irrelevant_name",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.001,
+      "max_abs_score_diff": 0.001
+    },
+    {
+      "case_id": "pp-1",
+      "perturbation": "irrelevant_context",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.002,
+      "max_abs_score_diff": 0.002
+    },
+    {
+      "case_id": "pp-1",
+      "perturbation": "contradictory_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.003,
+      "max_abs_score_diff": 0.003
+    },
+    {
+      "case_id": "pp-1",
+      "perturbation": "missing_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.107,
+      "max_abs_score_diff": 0.107
+    },
+    {
+      "case_id": "pp-2",
+      "perturbation": "irrelevant_name",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.002,
+      "max_abs_score_diff": 0.002
+    },
+    {
+      "case_id": "pp-2",
+      "perturbation": "irrelevant_context",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.006,
+      "max_abs_score_diff": 0.006
+    },
+    {
+      "case_id": "pp-2",
+      "perturbation": "contradictory_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.004,
+      "max_abs_score_diff": 0.004
+    },
+    {
+      "case_id": "pp-2",
+      "perturbation": "missing_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.053,
+      "max_abs_score_diff": 0.053
+    },
+    {
+      "case_id": "fs-1",
+      "perturbation": "irrelevant_name",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.0,
+      "max_abs_score_diff": 0.0
+    },
+    {
+      "case_id": "fs-1",
+      "perturbation": "irrelevant_context",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.006,
+      "max_abs_score_diff": 0.006
+    },
+    {
+      "case_id": "fs-1",
+      "perturbation": "contradictory_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.01,
+      "max_abs_score_diff": 0.01
+    },
+    {
+      "case_id": "fs-1",
+      "perturbation": "missing_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.047,
+      "max_abs_score_diff": 0.047
+    },
+    {
+      "case_id": "fs-2",
+      "perturbation": "irrelevant_name",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.001,
+      "max_abs_score_diff": 0.001
+    },
+    {
+      "case_id": "fs-2",
+      "perturbation": "irrelevant_context",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.0,
+      "max_abs_score_diff": 0.0
+    },
+    {
+      "case_id": "fs-2",
+      "perturbation": "contradictory_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.009,
+      "max_abs_score_diff": 0.009
+    },
+    {
+      "case_id": "fs-2",
+      "perturbation": "missing_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.018,
+      "max_abs_score_diff": 0.018
+    },
+    {
+      "case_id": "fs-2",
+      "perturbation": "paraphrase",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.007,
+      "max_abs_score_diff": 0.007
+    },
+    {
+      "case_id": "pf-1",
+      "perturbation": "irrelevant_name",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.015,
+      "max_abs_score_diff": 0.015
+    },
+    {
+      "case_id": "pf-1",
+      "perturbation": "irrelevant_context",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.0,
+      "max_abs_score_diff": 0.0
+    },
+    {
+      "case_id": "pf-1",
+      "perturbation": "contradictory_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.009,
+      "max_abs_score_diff": 0.009
+    },
+    {
+      "case_id": "pf-1",
+      "perturbation": "missing_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.046,
+      "max_abs_score_diff": 0.046
+    },
+    {
+      "case_id": "pf-2",
+      "perturbation": "irrelevant_name",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.0,
+      "max_abs_score_diff": 0.0
+    },
+    {
+      "case_id": "pf-2",
+      "perturbation": "irrelevant_context",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.0,
+      "max_abs_score_diff": 0.0
+    },
+    {
+      "case_id": "pf-2",
+      "perturbation": "contradictory_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.008,
+      "max_abs_score_diff": 0.008
+    },
+    {
+      "case_id": "pf-2",
+      "perturbation": "missing_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.046,
+      "max_abs_score_diff": 0.046
+    },
+    {
+      "case_id": "pf-2",
+      "perturbation": "paraphrase",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.006,
+      "max_abs_score_diff": 0.006
+    },
+    {
+      "case_id": "tg-1",
+      "perturbation": "irrelevant_name",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.001,
+      "max_abs_score_diff": 0.001
+    },
+    {
+      "case_id": "tg-1",
+      "perturbation": "irrelevant_context",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.0,
+      "max_abs_score_diff": 0.0
+    },
+    {
+      "case_id": "tg-1",
+      "perturbation": "contradictory_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.041,
+      "max_abs_score_diff": 0.041
+    },
+    {
+      "case_id": "tg-1",
+      "perturbation": "missing_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.012,
+      "max_abs_score_diff": 0.012
+    },
+    {
+      "case_id": "tg-2",
+      "perturbation": "irrelevant_name",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.001,
+      "max_abs_score_diff": 0.001
+    },
+    {
+      "case_id": "tg-2",
+      "perturbation": "irrelevant_context",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.0,
+      "max_abs_score_diff": 0.0
+    },
+    {
+      "case_id": "tg-2",
+      "perturbation": "contradictory_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.001,
+      "max_abs_score_diff": 0.001
+    },
+    {
+      "case_id": "tg-2",
+      "perturbation": "missing_info",
+      "top_agreement": 1.0,
+      "mean_abs_score_diff": 0.017,
+      "max_abs_score_diff": 0.017
+    }
+  ]
+}

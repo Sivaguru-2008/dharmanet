@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-[#f0f7ff] text-slate-800 antialiased;
+  background-image: radial-gradient(at 0% 0%, #e0f2fe 0px, transparent 50%), radial-gradient(at 100% 100%, #f0f9ff 0px, transparent 50%);
+  background-attachment: fixed;
+}
+
+@layer components {
+  .card {
+    @apply rounded-xl border border-sky-100 bg-white p-5 shadow-sm shadow-sky-100/70;
+  }
+  .card-title {
+    @apply mb-3 text-xs font-bold uppercase tracking-wider text-sky-800;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold transition disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-primary {
+    @apply btn bg-sky-600 text-white shadow-sm hover:bg-sky-700 active:bg-sky-800;
+  }
+  .btn-secondary {
+    @apply btn border border-sky-200 bg-white text-sky-900 shadow-sm hover:border-sky-400 hover:bg-sky-50;
+  }
+  .btn-ghost {
+    @apply btn text-sky-700 hover:bg-sky-100/60;
+  }
+  .input {
+    @apply w-full rounded-lg border border-sky-200 bg-white px-3 py-2 text-sm text-slate-800 outline-none transition focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20;
+  }
+  .label {
+    @apply mb-1 block text-xs font-semibold text-slate-700;
+  }
+  .chip {
+    @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium;
+  }
+  .muted {
+    @apply text-slate-500;
+  }
+}

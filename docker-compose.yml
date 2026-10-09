@@ -1,0 +1,35 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: dharmanet
+      POSTGRES_PASSWORD: dharmanet   # local development only
+      POSTGRES_DB: dharmanet
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U dharmanet"]
+      interval: 5s
+      retries: 10
+
+  backend:
+    build: { context: ., dockerfile: docker/backend.Dockerfile }
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      DHARMANET_DATABASE_URL: postgresql+psycopg://dharmanet:dharmanet@postgres:5432/dharmanet
+      DHARMANET_CORS_ORIGINS: http://localhost:3000
+    depends_on:
+      postgres: { condition: service_healthy }
+    ports: ["8000:8000"]
+
+  frontend:
+    build:
+      context: .
+      dockerfile: docker/frontend.Dockerfile
+      args: { BACKEND_URL: "http://backend:8000" }
+    depends_on: [backend]
+    ports: ["3000:3000"]
+
+volumes:
+  pgdata:
